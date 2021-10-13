@@ -1387,7 +1387,7 @@ ForEach ($account in $accountsCSV) {
 													$_bodyOp = "" | Select-Object "op", "path"
 													$_bodyOp.op = "remove"
 													$_bodyOp.path = "/secretManagement/manualManagementReason"
-													$s_AccountBody += $_bodyOp
+													# $s_AccountBody += $_bodyOp
 												} else {
 													# Need to add the manualManagementReason
 													Write-LogMessage -Type Verbose -MSG "Since Account Automatic management is off, adding the Manual management reason"
